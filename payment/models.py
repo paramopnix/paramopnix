@@ -6,8 +6,8 @@ class Deposit(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     
 # Payment receiving class
-class receive_payment(models.Model):
-    amount = models.DecimalField(max_digit = 10, decimal_places = 2) 
+class Payment(models.Model):
+    amount = models.DecimalField() 
     date = models.DateTimeField(auto_now_add = True)
     
     
